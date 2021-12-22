@@ -5,7 +5,6 @@ export function Servises({ backgrounds, title, decs }) {
         <>
             <div className={styles.servises}>
                 <div className="servBack"></div>
-                <p>lorem ipsum dolor sit ammet</p>
                 </div>
             <style jsx>{`
                 .servBack {
