@@ -1,9 +1,133 @@
-$color: #f00;
 .header {
-    height: 100px;
-    width: 100%;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .logotype {
+    background-image: url("../assets/logo-white.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 35px;
     display: flex;
     justify-content: center;
+  }
+  .mainMenu {
+    ul {
+      a {
+        color: #fff;
+        margin: 0 10px;
+        font-weight: 500;
+        font-size: 12px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .headerInfo {
+    display: flex;
     align-items: center;
-    background-color: $color;
+    justify-content: space-between;
+    .langWidget {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin: 0 10px;
+      li a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+      }
+      li.currentLang {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        &:after {
+          content: "";
+          background: url("../assets/arrow-down.svg") no-repeat;
+          background-size: contain;
+          width: 6px;
+          height: 6px;
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+      .opened {
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      li:not(.currentLang) {
+        position: absolute;
+        margin-top: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s all linear;
+        a {
+          padding: 5px 15px;
+          color: #333;
+          font-weight: 600;
+          display: block;
+          background-color: #fff;
+          border: 1px solid transparent;
+          transition: 0.2s all linear;
+
+          &:hover {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .defBtn {
+      width: 120px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      margin: 0 10px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      transition: 0.2s all linear;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid #fff;
+      }
+      &:active {
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+    .profilePhone {
+      display: flex;
+      align-items: center;
+      .profileIcon,
+      .phoneIcon {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+      }
+      .profileIcon {
+        background-image: url("../assets/user.svg");
+      }
+      .phoneIcon {
+        background-image: url("../assets/call.svg");
+      }
+    }
+  }
 }
