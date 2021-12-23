@@ -4,7 +4,7 @@
       rgb(21 27 48 / 99%) 8%,
       rgb(21 27 48 / 25%) 100%
     ),
-    url("../assets/image37.jpg");
+    url("../public/assets/images/image37.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,10 +70,10 @@
           display: inline-block;
         }
         .gartner a {
-          background-image: url("../assets/Gartner_logo1.svg");
+          background-image: url("../public/assets/images/Gartner_logo1.svg");
         }
         .everest a {
-          background-image: url("../assets/everest-group.svg");
+          background-image: url("../public/assets/images/everest-group.svg");
         }
       }
     }

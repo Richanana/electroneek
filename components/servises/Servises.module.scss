@@ -1,0 +1,50 @@
+.mainServises {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -150px;
+  .servises {
+    width: 390px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .2s all linear;
+    .servBack {
+        width: 100%;
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h3 {
+        height: 50%;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 20px;
+        line-height: 2;
+      }
+      &:hover {
+          box-shadow: 0 60px 150px rgba(0, 32, 17, 0.25);
+      }
+  }
+  .firstServ .servBack {
+    background-image: url("../../public/assets/images/image36.jpg");
+  }
+  .secondServ .servBack {
+    background-image: url("../../public/assets/images/image7.jpg");
+  }
+  .thirdServ .servBack{
+    background-image: url("../../public/assets/images/image34.png");
+  }
+  .secondServ {
+      margin: 0 15px;
+  }
+  
+}
+
+
+
+

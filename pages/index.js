@@ -1,11 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import { MainLayout } from '../components/MainLayout'
-import Link from 'next/link'
 import { Servises } from '../components/servises/Servises'
+import servstyles from "../components/servises/Servises.module.scss"
 
-export default function Home({ backgrounds }) {
+export default function Home({ servises }) {
   return (
     <MainLayout>
       <div className={`${styles.mainTopBar} container`}>
@@ -29,16 +27,22 @@ export default function Home({ backgrounds }) {
             </ul>
           </div>
         </div>
-        <Servises backgrounds={backgrounds[0].url}/>
+        <div className={servstyles.mainServises}>
+          {servises.map(
+            item => (<Servises id={item.id}
+              selector={item.selector}
+              title={item.title} />))
+          }
+        </div>
       </div>
     </MainLayout>
   )
 }
 
-Home.getInitialProps = async ()  => {
-  const res = await fetch("http://localhost:4200/backgrounds/")
-  const backgrounds = await  res.json();
+Home.getInitialProps = async () => {
+  const res = await fetch("http://localhost:4200/servises")
+  const servises = await res.json();
   return {
-    backgrounds
+    servises
   }
 } 

@@ -1,8 +1,19 @@
 {
-    "backgrounds": [
+    "servises": [
     {
         "id": 1,
-        "url": "../../assets/image36.jpg"
+        "selector": "firstServ",
+        "title": "Start and grow your rpa service business with electroneek."
+    },
+    {
+        "id": 2,
+        "selector": "secondServ",
+        "title": "Service clients on your own business terms & build subscription revenue."
+    },
+    {
+        "id": 3,
+        "selector": "thirdServ",
+        "title": "Unlimited scalability and cost savings for enterprise coes."
     }
     ]
 }
