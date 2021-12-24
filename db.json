@@ -1,19 +1,44 @@
 {
-    "servises": [
+    "servises": 
     {
-        "id": 1,
-        "selector": "firstServ",
-        "title": "Start and grow your rpa service business with electroneek."
-    },
-    {
-        "id": 2,
-        "selector": "secondServ",
-        "title": "Service clients on your own business terms & build subscription revenue."
-    },
-    {
-        "id": 3,
-        "selector": "thirdServ",
-        "title": "Unlimited scalability and cost savings for enterprise coes."
+        "serv": [
+        
+            {
+                "id": 1,
+                "selector": "firstServ",
+                "title": "Start and grow your rpa service business",
+                "desc": " with electroneek.",
+                "arrowLink": "greenArrow"
+            },
+            {
+                "id": 2,
+                "selector": "secondServ",
+                "title": "Service clients on your own business terms",
+                "desc": " & build subscription revenue.",
+                "arrowLink": "purpleArrow"
+            },
+            {
+                "id": 3,
+                "selector": "thirdServ",
+                "title": "Unlimited scalability and cost savings for enterprise coes.",
+                "desc": " savings for enterprise coes.",
+                "arrowLink": "yellowArrow"
+            }
+            
+        ]
+    ,
+        "partners": [
+            {
+                "id": 1,
+                "title": "Join recognized",
+                "desc": " providers"
+            },
+            {
+                "id": 2,
+                "title": "And leading global busines",
+                "desc": " that already use ElectroNeek"
+            }
+        ]
     }
-    ]
+    
 }

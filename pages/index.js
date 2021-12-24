@@ -2,8 +2,19 @@ import styles from '../styles/Home.module.scss'
 import { MainLayout } from '../components/MainLayout'
 import { Servises } from '../components/servises/Servises'
 import servstyles from "../components/servises/Servises.module.scss"
+import { Providers } from '../components/providers/Providers'
+import { useEffect, useState } from 'react'
 
-export default function Home({ servises }) {
+export default function Home({ servises, partners }) {
+  const [isServ, setServ] = useState();
+
+  useEffect(async () => {
+    const res = await fetch("http://localhost:4200/servises/")
+    const servises = await res.json();
+    console.log(servises)
+    {console.log(servises?.serv)}
+    return { servises: servises.serv, partners: servises.partners }
+  }, []);
   return (
     <MainLayout>
       <div className={`${styles.mainTopBar} container`}>
@@ -28,21 +39,32 @@ export default function Home({ servises }) {
           </div>
         </div>
         <div className={servstyles.mainServises}>
-          {servises.map(
-            item => (<Servises id={item.id}
-              selector={item.selector}
-              title={item.title} />))
+        {console.log(servises?.serv)}
+          {servises?.serv.map(
+            item => (
+              <div key={item.id}>
+                
+                <Servises
+                  selector={item.selector}
+                  title={item.title} 
+                  desc={item.desc}
+                  arrow={item.arrowLink}/>
+              </div>))
           }
         </div>
+        <Providers />
+        {/* {console.log(servises?.partners)} */}
       </div>
     </MainLayout>
   )
 }
 
-Home.getInitialProps = async () => {
-  const res = await fetch("http://localhost:4200/servises")
-  const servises = await res.json();
-  return {
-    servises
-  }
-} 
+// Home.getInitialProps = async () => {
+
+    
+    
+  
+// } 
+
+
+

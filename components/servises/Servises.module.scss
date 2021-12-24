@@ -9,26 +9,44 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+    align-items: flex-end;
     background-color: #fff;
-    transition: .2s all linear;
+    transition: 0.2s all linear;
     .servBack {
-        width: 100%;
-        height: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      h3 {
-        height: 50%;
-        font-weight: 800;
-        font-size: 16px;
-        padding: 20px;
-        line-height: 2;
-      }
-      &:hover {
-          box-shadow: 0 60px 150px rgba(0, 32, 17, 0.25);
-      }
+      width: 100%;
+      height: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    p {
+      height: auto;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 30px 20px 0;
+      line-height: 2;
+      
+    }
+    &:hover {
+      box-shadow: 0 60px 150px rgba(0, 32, 17, 0.25);
+    }
+    .arrowLink {
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      transform: rotate(90deg);
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .greenArrow {
+      background-image: url("../../public/assets/images/arrow-green.svg");
+    }
+    .purpleArrow {
+      background-image: url("../../public/assets/images/arrow-purple.svg");
+    }
+    .yellowArrow {
+      background-image: url("../../public/assets/images/arrow-yellow.svg");
+    }
   }
   .firstServ .servBack {
     background-image: url("../../public/assets/images/image36.jpg");
@@ -36,15 +54,10 @@
   .secondServ .servBack {
     background-image: url("../../public/assets/images/image7.jpg");
   }
-  .thirdServ .servBack{
+  .thirdServ .servBack {
     background-image: url("../../public/assets/images/image34.png");
   }
   .secondServ {
-      margin: 0 15px;
+    margin: 0 15px;
   }
-  
 }
-
-
-
-
