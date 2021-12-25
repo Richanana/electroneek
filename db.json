@@ -18,7 +18,7 @@
             {
                 "id": 3,
                 "selector": "thirdServ",
-                "title": "Unlimited scalability and cost savings for enterprise coes.",
+                "title": "Unlimited scalability and cost",
                 "desc": " savings for enterprise coes.",
                 "arrowLink": "yellowArrow"
             }
@@ -49,6 +49,15 @@
                     "logo5": "logo5",
                     "logo6": "logo6"
                 }
+            }
+        ],
+        "company": [
+            {
+                "id": 1,
+                "subTitle": "Deploy your own Robotic Process Automation Platform",
+                "title": "Robotic Process",
+                "span": "Automation for Services Providers",
+                "btnText": "Explore partnership"
             }
         ]
     }

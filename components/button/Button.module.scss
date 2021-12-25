@@ -1,0 +1,20 @@
+a.explore {
+    width: fit-content;
+    padding: 25px 50px;
+    background: #00aa5d;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    transition: 0.2s all linear;
+    &:hover {
+      background: #008d4d;
+    }
+    &:active {
+      background: #00aa5d;
+    }
+  }

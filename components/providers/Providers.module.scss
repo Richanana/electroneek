@@ -1,4 +1,6 @@
 .partnersBlock {
+    display: flex;
+    flex-direction: column;
   .partnerLogos {
     display: flex;
     flex-direction: column;
@@ -29,7 +31,8 @@
       
     }
   }
-  .section1 {
+  .section:nth-child(1) {
+      display: block;
     .logo1 {
         background-image: url("../../public/assets/images/Xerox_logo-green.svg");
         &:hover {
@@ -67,41 +70,43 @@
         }
       }
   }
-  .section2 {
+
+  .section:nth-child(2) {
+      display: block;
     .logo1 {
-        background-image: url("../../public/assets/images/Xerox_logo.svg");
+        background-image: url("../../public/assets/images/Toyota-purple.svg");
         &:hover {
-          background-image: url("../../public/assets/images/Xerox_logo.svg");
+          background-image: url("../../public/assets/images/Toyota.svg");
         }
       }
       .logo2 {
-        background-image: url("../../public/assets/images/Coopers_Logo-green.svg");
+        background-image: url("../../public/assets/images/Electrolux_logo-purple.svg");
         &:hover {
-          background-image: url("../../public/assets/images/Coopers_Logo.svg");
+          background-image: url("../../public/assets/images/Electrolux_logo.svg");
         }
       }
       .logo3 {
-        background-image: url("../../public/assets/images/HLB-logo-green.svg");
+        background-image: url("../../public/assets/images/Seven_eleven_logo-purple.svg");
         &:hover {
-          background-image: url("../../public/assets/images/HLB-logo.svg");
+          background-image: url("../../public/assets/images/Seven_eleven_logo.svg");
         }
       }
       .logo4 {
-        background-image: url("../../public/assets/images/KPMG-green.svg");
+        background-image: url("../../public/assets/images/sage-logo-purple.svg");
         &:hover {
-          background-image: url("../../public/assets/images/KPMG.svg");
+          background-image: url("../../public/assets/images/sage-logo.svg");
         }
       }
       .logo5 {
-        background-image: url("../../public/assets/images/surface1-green.svg");
+        background-image: url("../../public/assets/images/epiroc-logo-purlple.svg");
         &:hover {
-          background-image: url("../../public/assets/images/surface1.svg");
+          background-image: url("../../public/assets/images/epiroc-logo.svg");
         }
       }
       .logo6 {
-        background-image: url("../../public/assets/images/BDO_logo-green.svg");
+        background-image: url("../../public/assets/images/ricoh-logo-purple.svg");
         &:hover {
-          background-image: url("../../public/assets/images/BDO_logo.svg");
+          background-image: url("../../public/assets/images/ricoh-logo.svg");
         }
       }
   }

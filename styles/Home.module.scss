@@ -21,37 +21,22 @@
       font-size: 16px;
     }
     h1 {
-      font-weight: 600;
+      font-weight: 400;
       font-size: 50px;
       margin: 20px 0;
+      b {
+        font-weight: bolder;
+      }
     }
     p {
       font-weight: 500;
       font-size: 16px;
+      line-height: 30px;
     }
   }
   .partnership {
     display: flex;
     align-items: center;
-    a.explore {
-      padding: 25px 50px;
-      background: #00aa5d;
-      color: #fff;
-      font-weight: 800;
-      font-size: 16px;
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-      transition: 0.2s all linear;
-      &:hover {
-        background: #008d4d;
-      }
-      &:active {
-        background: #00aa5d;
-      }
-    }
     .partersLogos {
       display: flex;
       align-items: center;
