@@ -7,13 +7,12 @@ import { useEffect, useState } from 'react'
 
 export default function Home({ servises, partners }) {
   const [isServ, setServ] = useState();
-
+  const [isPartner, setPartner] = useState();
   useEffect(async () => {
     const res = await fetch("http://localhost:4200/servises/")
     const servises = await res.json();
-    console.log(servises)
-    {console.log(servises?.serv)}
-    return { servises: servises.serv, partners: servises.partners }
+    setServ(servises?.serv)
+    setPartner(servises?.partners)
   }, []);
   return (
     <MainLayout>
@@ -39,8 +38,7 @@ export default function Home({ servises, partners }) {
           </div>
         </div>
         <div className={servstyles.mainServises}>
-        {console.log(servises?.serv)}
-          {servises?.serv.map(
+          {isServ?.map(
             item => (
               <div key={item.id}>
                 
@@ -52,19 +50,21 @@ export default function Home({ servises, partners }) {
               </div>))
           }
         </div>
-        <Providers />
-        {/* {console.log(servises?.partners)} */}
+      </div>
+      <div className={styles.mainContent}>
+        <div className={styles.partnersBlock}>
+        {isPartner?.map(
+          item => (
+            <div key={item.id}>
+              <Providers title={item.title} desc={item.desc}/>
+            </div>))
+        }
+        </div>
+
       </div>
     </MainLayout>
   )
 }
-
-// Home.getInitialProps = async () => {
-
-    
-    
-  
-// } 
 
 
 
