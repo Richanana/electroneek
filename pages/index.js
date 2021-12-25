@@ -4,14 +4,16 @@ import { Servises } from '../components/servises/Servises'
 import servstyles from "../components/servises/Servises.module.scss"
 import { Providers } from '../components/providers/Providers'
 import { useEffect, useState } from 'react'
+import prov from "../components/providers/Providers.module.scss"
 
 export default function Home({ servises, partners }) {
   const [isServ, setServ] = useState();
-  const [isPartner, setPartner] = useState();
+  const [isPartner, setPartner] = useState([]);
   useEffect(async () => {
     const res = await fetch("http://localhost:4200/servises/")
     const servises = await res.json();
     setServ(servises?.serv)
+  
     setPartner(servises?.partners)
   }, []);
   return (
@@ -51,12 +53,13 @@ export default function Home({ servises, partners }) {
           }
         </div>
       </div>
-      <div className={styles.mainContent}>
-        <div className={styles.partnersBlock}>
+      <div className={`${styles.mainContent} container`}>
+        <div className={`${styles.partnersBlock}`}>
         {isPartner?.map(
           item => (
-            <div key={item.id}>
-              <Providers title={item.title} desc={item.desc}/>
+            
+            <div key={item.id} className={`section${item.id}`}>
+              <Providers title={item.title} desc={item.desc} logo={Object.values(item.logos).map(log => (log))} id={item.id}/>
             </div>))
         }
         </div>

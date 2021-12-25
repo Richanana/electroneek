@@ -1,0 +1,108 @@
+.partnersBlock {
+  .partnerLogos {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-weight: 800;
+      font-size: 30px;
+      color: #151b30;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .partnerLogos {
+    .logos {
+      display: flex;
+      justify-content: space-between;
+      margin: 80px 0;
+      a {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 120px;
+        height: 60px;
+        display: flex;
+        transition: 0.2s all linear;
+      }
+      
+    }
+  }
+  .section1 {
+    .logo1 {
+        background-image: url("../../public/assets/images/Xerox_logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/Xerox_logo.svg");
+        }
+      }
+      .logo2 {
+        background-image: url("../../public/assets/images/Coopers_Logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/Coopers_Logo.svg");
+        }
+      }
+      .logo3 {
+        background-image: url("../../public/assets/images/HLB-logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/HLB-logo.svg");
+        }
+      }
+      .logo4 {
+        background-image: url("../../public/assets/images/KPMG-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/KPMG.svg");
+        }
+      }
+      .logo5 {
+        background-image: url("../../public/assets/images/surface1-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/surface1.svg");
+        }
+      }
+      .logo6 {
+        background-image: url("../../public/assets/images/BDO_logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/BDO_logo.svg");
+        }
+      }
+  }
+  .section2 {
+    .logo1 {
+        background-image: url("../../public/assets/images/Xerox_logo.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/Xerox_logo.svg");
+        }
+      }
+      .logo2 {
+        background-image: url("../../public/assets/images/Coopers_Logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/Coopers_Logo.svg");
+        }
+      }
+      .logo3 {
+        background-image: url("../../public/assets/images/HLB-logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/HLB-logo.svg");
+        }
+      }
+      .logo4 {
+        background-image: url("../../public/assets/images/KPMG-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/KPMG.svg");
+        }
+      }
+      .logo5 {
+        background-image: url("../../public/assets/images/surface1-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/surface1.svg");
+        }
+      }
+      .logo6 {
+        background-image: url("../../public/assets/images/BDO_logo-green.svg");
+        &:hover {
+          background-image: url("../../public/assets/images/BDO_logo.svg");
+        }
+      }
+  }
+}

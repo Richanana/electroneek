@@ -1,25 +1,20 @@
 import React from "react";
 import styles from "../providers/Providers.module.scss"
+import Link from "next/link";
 
-export  function Providers({title, desc, logo}) {
-    const imgg = require("../../public/assets/images/images36.jpg")
+export  function Providers({title, desc, logo, id}) {
+    const key = 0;
     return (
         <>
-            <div className={`${styles.partnerLogos} ${styles.providers}`}>
+            <div className={`${styles.partnerLogos}`}>
                 <h2>{title}<span>{desc}</span></h2>
-                <img src={imgg} width={"200px"} height={"200px"}/>
-                <ul>
-                    {logo.map(item => (
-                        <li><a>{item}</a></li>
+                
+                <ul className={styles.logos}>
+                    {logo.map(ttt => (
+                        <li key={key++}><Link href={"/"}><a className={styles[ttt]}></a></Link></li>
                     ))}
                 </ul>
             </div>
         </>
     )
 }
-
-// Providers.getInitialProps = async () => {
-//     const res = await fetch("http://localhost:4200/partners/");
-//     const partners = await res.json();
-//     return { partners }
-// }
