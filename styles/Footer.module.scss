@@ -1,8 +1,107 @@
 .siteFooter {
-    height: auto;
-    background-color: #151B30;
-    padding: 50px 0;
+  height: auto;
+  background-color: #151b30;
+  padding: 100px 0;
+
+  .footerMenu {
     display: flex;
-    flex-direction: column;
-    
+    justify-content: space-between;
+    ul {
+      li:first-child {
+        a {
+          font-weight: 800;
+        }
+      }
+      li a {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 3.5em;
+        &:before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            opacity: 0;
+            transition: .2s all linear
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    .footerLogo {
+      display: flex;
+      align-items: center;
+      .socLogo {
+        background-image: url("../public/assets/images/soc-icon.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 110px;
+        height: 50px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        color: #fff;
+        margin-left: 55px;
+      }
+    }
+    .socialIcons {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          background-repeat: no-repeat;
+          background-size: 40px;
+          background-position: center;
+          background-color: #0e1222;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin: 0 10px;
+          display: flex;
+          position: relative;
+          &:before {
+            content: "";
+            border: 2px solid #0e1222;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            transition: .2s all linear
+          }
+          &:hover::before {
+              transform: scale(1.2);
+              opacity: 0;
+          }
+        }
+        a.insta {
+          background-image: url("../public/assets/images/inst.png");
+        }
+        a.in {
+          background-image: url("../public/assets/images/link.png");
+        }
+        a.yout {
+          background-image: url("../public/assets/images/yout.png");
+        }
+        a.fb {
+          background-image: url("../public/assets/images/fb.png");
+        }
+      }
+    }
+  }
 }

@@ -40,7 +40,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.partnership}>
-          <Button text={"EXPLORE PARTNERSHIP"}/>
+          <Button text={"EXPLORE PARTNERSHIP"} />
           <div className={styles.partersLogos}>
             <ul>
               <li className={styles.gartner}><a href="#"></a></li>
@@ -48,9 +48,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className={servstyles.mainServises}>
+        <div className={`${servstyles.mainServises} container`}>
           {isServ?.map(item => (
-            <div key={item.id}>
+            <div key={item.id} className={servstyles.servBlock}>
               <Servises
                 selector={item.selector}
                 title={item.title}
@@ -86,27 +86,31 @@ export default function Home() {
       </div>
       <footer className={footer.siteFooter}>
         <div className={`container`}>
-        <div className={footer.footerMenu}>
-          {isFooter?.map(item => (
-          <Footer menu={Object.values(item.menuItem).map(link => (link))}/>
-        ))}
-        </div>
-        <div className={footer.copyright}>
-          <div className={footer.footerLogo}></div>
-          <div className={footer.socialIcons}>
-            <ul>
-              <li><Link href={"/"}><a className={footer.insta}></a></Link></li>
-              <li><Link href={"/"}><a className={footer.in}></a></Link></li>
-              <li><Link href={"/"}><a className={footer.yout}></a></Link></li>
-              <li><Link href={"/"}><a className={footer.fb}></a></Link></li>
-            </ul>
+          <div className={footer.footerMenu}>
+            {isFooter?.map(item => (
+              <Footer menu={Object.values(item.menuItem).map(link => (link))} />
+            ))}
+          </div>
+          <div className={footer.copyright}>
+            <div className={footer.footerLogo}>
+              <div className={footer.socLogo}></div>
+              <p>© 2021 ElectroNeek Robotics Inc.<br />
+                All rights reserved.</p>
+            </div>
+            <div className={footer.socialIcons}>
+              <ul>
+                <li><Link href={"/"}><a className={footer.insta}></a></Link></li>
+                <li><Link href={"/"}><a className={footer.in}></a></Link></li>
+                <li><Link href={"/"}><a className={footer.yout}></a></Link></li>
+                <li><Link href={"/"}><a className={footer.fb}></a></Link></li>
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-        
+
       </footer>
-        
-      
+
+
     </MainLayout>
   )
 }

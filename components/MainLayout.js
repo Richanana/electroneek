@@ -6,8 +6,9 @@ import { useState } from 'react'
 export function MainLayout({children, title = "Home" }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); 
   };
+ 
     return (
     <>
     <Head>

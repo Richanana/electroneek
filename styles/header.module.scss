@@ -20,11 +20,28 @@
   }
   .mainMenu {
     ul {
+      li {
+        margin: 0 10px;
+      }
       a {
         color: #fff;
-        margin: 0 10px;
+
         font-weight: 500;
         font-size: 12px;
+        &:after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          margin-top: 3px;
+          display: block;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: 0.2s all linear;
+        }
+        &:hover::after {
+          transform: scaleX(1);
+        }
       }
       display: flex;
       align-items: center;
@@ -67,7 +84,7 @@
       }
       li:not(.currentLang) {
         position: absolute;
-        margin-top: 20px;
+        margin-top: 25px;
         visibility: hidden;
         opacity: 0;
         transition: 0.2s all linear;
@@ -130,5 +147,24 @@
         background-image: url("../public/assets/images/call.svg");
       }
     }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mainMenu {
+    a {
+      font-size: 10px !important;
+    }
+  }
+  .profileIcon {
+    margin: 0 5px !important;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .header .headerInfo .defBtn {
+    width: 110px;
+    height: 35px;
+    font-size: 10px;
   }
 }
