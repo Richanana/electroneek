@@ -2,7 +2,7 @@
   height: auto;
   background-color: #151b30;
   padding: 100px 0;
-
+  margin-top: 50px;
   .footerMenu {
     display: flex;
     justify-content: space-between;
@@ -18,18 +18,18 @@
         font-weight: 400;
         line-height: 3.5em;
         &:before {
-            content: "";
-            width: 5px;
-            height: 5px;
-            background-color: #fff;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 10px;
-            opacity: 0;
-            transition: .2s all linear
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 5px;
+          opacity: 0;
+          transition: 0.2s all linear;
         }
         &:hover::before {
-            opacity: 1;
+          opacity: 1;
         }
       }
     }
@@ -82,11 +82,11 @@
             position: absolute;
             top: -1px;
             left: -1px;
-            transition: .2s all linear
+            transition: 0.2s all linear;
           }
           &:hover::before {
-              transform: scale(1.2);
-              opacity: 0;
+            transform: scale(1.2);
+            opacity: 0;
           }
         }
         a.insta {
@@ -101,6 +101,57 @@
         a.fb {
           background-image: url("../public/assets/images/fb.png");
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .siteFooter {
+    .footerMenu {
+      justify-content: start;
+      flex-wrap: wrap;
+      ul {
+        width: 200px;
+        margin-top: 30px;
+        li a {
+          line-height: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .siteFooter {
+    .footerMenu {
+      ul {
+        width: 175px;
+        margin-top: 30px;
+      }
+    }
+  }
+  .siteFooter {
+    padding: 50px 0;
+    .copyright {
+      flex-direction: column;
+      align-items: center;
+      .socialIcons {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .siteFooter {
+    .footerMenu ul {
+      width: 158px;
+      a::before {
+        position: absolute;
+        margin: 0 !important;
+        margin-left: -10px !important;
+        margin-top: 9px !important;
       }
     }
   }

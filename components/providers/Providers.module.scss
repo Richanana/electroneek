@@ -1,6 +1,6 @@
 .partnersBlock {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   .partnerLogos {
     display: flex;
     flex-direction: column;
@@ -18,6 +18,7 @@
     .logos {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       margin: 80px 0;
       a {
         background-repeat: no-repeat;
@@ -28,86 +29,132 @@
         display: flex;
         transition: 0.2s all linear;
       }
-      
     }
   }
   .section:nth-child(1) {
-      display: block;
+    display: block;
     .logo1 {
-        background-image: url("../../public/assets/images/Xerox_logo-green.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/Xerox_logo.svg");
-        }
+      background-image: url("../../public/assets/images/Xerox_logo-green.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/Xerox_logo.svg");
       }
-      .logo2 {
-        background-image: url("../../public/assets/images/Coopers_Logo-green.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/Coopers_Logo.svg");
-        }
+    }
+    .logo2 {
+      background-image: url("../../public/assets/images/Coopers_Logo-green.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/Coopers_Logo.svg");
       }
-      .logo3 {
-        background-image: url("../../public/assets/images/HLB-logo-green.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/HLB-logo.svg");
-        }
+    }
+    .logo3 {
+      background-image: url("../../public/assets/images/HLB-logo-green.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/HLB-logo.svg");
       }
-      .logo4 {
-        background-image: url("../../public/assets/images/KPMG-green.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/KPMG.svg");
-        }
+    }
+    .logo4 {
+      background-image: url("../../public/assets/images/KPMG-green.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/KPMG.svg");
       }
-      .logo5 {
-        background-image: url("../../public/assets/images/surface1-green.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/surface1.svg");
-        }
+    }
+    .logo5 {
+      background-image: url("../../public/assets/images/surface1-green.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/surface1.svg");
       }
-      .logo6 {
-        background-image: url("../../public/assets/images/BDO_logo-green.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/BDO_logo.svg");
-        }
+    }
+    .logo6 {
+      background-image: url("../../public/assets/images/BDO_logo-green.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/BDO_logo.svg");
       }
+    }
   }
 
   .section:nth-child(2) {
-      display: block;
+    display: block;
     .logo1 {
-        background-image: url("../../public/assets/images/Toyota-purple.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/Toyota.svg");
+      background-image: url("../../public/assets/images/Toyota-purple.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/Toyota.svg");
+      }
+    }
+    .logo2 {
+      background-image: url("../../public/assets/images/Electrolux_logo-purple.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/Electrolux_logo.svg");
+      }
+    }
+    .logo3 {
+      background-image: url("../../public/assets/images/Seven_eleven_logo-purple.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/Seven_eleven_logo.svg");
+      }
+    }
+    .logo4 {
+      background-image: url("../../public/assets/images/sage-logo-purple.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/sage-logo.svg");
+      }
+    }
+    .logo5 {
+      background-image: url("../../public/assets/images/epiroc-logo-purlple.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/epiroc-logo.svg");
+      }
+    }
+    .logo6 {
+      background-image: url("../../public/assets/images/ricoh-logo-purple.svg");
+      &:hover {
+        background-image: url("../../public/assets/images/ricoh-logo.svg");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .partnersBlock {
+    h2 {
+      text-align: center;
+      font-size: 20px !important;
+    }
+    .partnerLogos {
+      .logos {
+        justify-content: center;
+        a {
+          margin: 15px 30px;
+          width: 80px;
         }
       }
-      .logo2 {
-        background-image: url("../../public/assets/images/Electrolux_logo-purple.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/Electrolux_logo.svg");
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partnersBlock {
+    .partnerLogos {
+      .logos {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        a {
+          margin: 15px !important;
         }
       }
-      .logo3 {
-        background-image: url("../../public/assets/images/Seven_eleven_logo-purple.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/Seven_eleven_logo.svg");
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .partnersBlock {
+    .partnerLogos {
+      .logos {
+        a {
+          margin: 10px !important;
         }
       }
-      .logo4 {
-        background-image: url("../../public/assets/images/sage-logo-purple.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/sage-logo.svg");
-        }
+      h2 {
+        text-align: left;
       }
-      .logo5 {
-        background-image: url("../../public/assets/images/epiroc-logo-purlple.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/epiroc-logo.svg");
-        }
-      }
-      .logo6 {
-        background-image: url("../../public/assets/images/ricoh-logo-purple.svg");
-        &:hover {
-          background-image: url("../../public/assets/images/ricoh-logo.svg");
-        }
-      }
+    }
   }
 }

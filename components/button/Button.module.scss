@@ -11,10 +11,24 @@ a.explore {
     align-items: center;
     margin-top: 30px;
     transition: 0.2s all linear;
+    text-transform: uppercase;
     &:hover {
       background: #008d4d;
     }
     &:active {
       background: #00aa5d;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    a.explore {
+      font-size: 14px;
+      padding: 20px 40px;
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    a.explore {
+      width: 100%;
     }
   }
