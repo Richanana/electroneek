@@ -59,6 +59,88 @@
                 "span": "Automation for Services Providers",
                 "btnText": "Explore partnership"
             }
+        ],
+        "footerMenu": [
+            {
+                "id": "1",
+                "menuItem": {
+                    "title": "RPA",
+                    "item1": "What is RPA",
+                    "item2": "History of RPA",
+                    "item3": "RPA for MSP"
+                }
+            },
+            {
+                "id": "2",
+                "menuItem": {
+                    "title": "MSPs",
+                    "item1": "Start RPA business",
+                    "item2": "Grow RPA business",
+                    "item3": "Pricing",
+                    "item4": "MSPs Success Stories"
+                }
+            },
+            {
+                "id": "3",
+                "menuItem": {
+                    "title": "Enterprise",
+                    "item1": "RPA Implementation",
+                    "item2": "Build your CoE",
+                    "item3": "Customers Success Stories"
+                }
+            },
+            {
+                "id": "4",
+                "menuItem": {
+                    "title": "Products",
+                    "item1": "Platform Overview",
+                    "item2": "Studio Pro",
+                    "item3": "Bot Runner",
+                    "item4": "Orchestrator Saas"
+                }
+            },
+            {
+                "id": "5",
+                "menuItem": {
+                    "title": "Partners",
+                    "item1": "Find a partner"
+                }
+            },
+            {
+                "id": "6",
+                "menuItem": {
+                    "title": "For Developers",
+                    "item1": "Help Center",
+                    "item2": "Community Forum",
+                    "item3": "Online Academy"
+                }
+            },
+            {
+                "id": "7",
+                "menuItem": {
+                    "title": "Blog",
+                    "item1": "Blog"
+                }
+            },
+            {
+                "id": "8",
+                "menuItem": {
+                    "title": "Resources",
+                    "item1": "Bot library"
+                }
+            },
+            {
+                "id": "9",
+                "menuItem": {
+                    "title": "Company",
+                    "item1": "About us",
+                    "item2": "Team",
+                    "item3": "Careers",
+                    "item4": "Webinars",
+                    "item5": "Whitepapers",
+                    "item6": "Contacts"
+                }
+            }
         ]
     }
 }

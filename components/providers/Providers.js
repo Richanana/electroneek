@@ -10,8 +10,8 @@ export  function Providers({title, desc, logo, id}) {
                 <h2>{title}<span>{desc}</span></h2>
                 
                 <ul className={styles.logos}>
-                    {logo.map(ttt => (
-                        <li key={key++}><Link href={"/"}><a className={styles[ttt]}></a></Link></li>
+                    {logo.map(child => (
+                        <li key={key++}><Link href={"/"}><a className={styles[child]}></a></Link></li>
                     ))}
                 </ul>
             </div>
