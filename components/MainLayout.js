@@ -16,7 +16,7 @@ export function MainLayout({ children, title = "Home" }) {
     }
 
     const listenScrollEvent = (event) => {
-        if(window.scrollY > 2400) {
+        if(window.scrollY > 2000) {
             return setHeader("alredy")
         } else if (window.scrollY < 100){
             return setHeader("no")
